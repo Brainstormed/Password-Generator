@@ -15,6 +15,7 @@ h1 {
 hr {
     margin-bottom: 4em;
     width: 35em;
+    max-width: 95%;
 }
 
 [type="number"] {
