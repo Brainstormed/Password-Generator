@@ -11,7 +11,7 @@ function generate() {
     let passOut = []
     let passStr = ""
 
-    if (length != 0) {
+    if (length > 0) {
         for (let i = 0; i < length; i++) {
             mapIn.push(random())
         }
@@ -50,9 +50,10 @@ function generate() {
             passwdStrength.style.color = "#21201c"
         }
     } else {
-        output.textContent = "Please enter an actual number!"
+        output.textContent = "Please enter an proper number!"
         output.style.animation = "error 0.3s forwards ease-in-out"
         output.style.opacity = 0.6
         output.style.userSelect = "none"
+        passwdStrength.textContent = ""
     }
 }
