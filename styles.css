@@ -1,73 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
 body {
-    background-color: #292929;
-    color: #e4e4e4;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+  background-color: #292929;
+  color: #e4e4e4;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-    font-size: 2.1em;
+  font-size: 2.1em;
 }
 
 hr {
-    margin-bottom: 4em;
-    width: 35em;
-    max-width: 95%;
+  margin-bottom: 4em;
+  width: 35em;
+  max-width: 95%;
 }
 
 [type="number"] {
-    height: 50px;
-    font-size: 1.5em;
-    font-family: Poppins, sans-serif;
+  height: 50px;
+  font-size: 1.5em;
+  font-family: Poppins, sans-serif;
 }
 
 [type="button"] {
-    border: #d4d4d4 solid 2px;
-    border-radius: 0.5em;
-    font-size: 1.2em;
-    height: 1.7em;
-    background-color: #e0f5ff;
-    margin-top: 1em;
-    font-family: Poppins, sans-serif;
-    cursor: pointer;
+  border: #d4d4d4 solid 2px;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  height: 1.7em;
+  background-color: #e0f5ff;
+  margin-top: 1em;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
 }
 
 label {
-    display: block;
-    margin: auto;
-    margin-bottom: 1em;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
 }
 
 span {
-    color: rgb(235, 48, 48);
-    font-size: 1.4em;
+  color: rgb(235, 48, 48);
+  font-size: 1.4em;
 }
 
 #output {
-    margin-top: 4em;
-    user-select: none;
-    opacity: 0.6;
-    font-size: 1.2em;
-    font-family: "JetBrains Mono", monospace;
+  margin-top: 4em;
+  user-select: none;
+  opacity: 0.6;
+  font-size: 1.2em;
+  font-family: "JetBrains Mono", monospace;
 }
 
 #passwdStrength {
-    width: 10em;
-    margin: 1em auto;
-    border-radius: 5px;
+  width: 10em;
+  margin: 1em auto;
+  border-radius: 5px;
 }
 
 @keyframes error {
-    25% {
-        transform: translateX(0.5em);
-    }
-    75% {
-        transform: translateX(-0.5em);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  25% {
+    transform: translateX(0.5em);
+  }
+  75% {
+    transform: translateX(-0.5em);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
