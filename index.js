@@ -3,6 +3,13 @@ function generate() {
     return Math.floor(Math.random() * 89);
   }
 
+  function animation() {
+    output.style.animation = "none";
+    setTimeout(function () {
+      output.style.animation = "error 0.3s forwards ease-in-out";
+    });
+  }
+
   let length = document.getElementById("length").value;
   let output = document.getElementById("output");
   let passwdStrength = document.getElementById("passwdStrength");
@@ -52,7 +59,7 @@ function generate() {
     }
   } else {
     output.textContent = "Please enter an proper number!";
-    output.style.animation = "error 0.3s forwards ease-in-out";
+    animation();
     output.style.opacity = 0.6;
     output.style.userSelect = "none";
     passwdStrength.textContent = "";
