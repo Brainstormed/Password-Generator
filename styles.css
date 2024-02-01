@@ -21,6 +21,7 @@ hr {
 [type="number"] {
     height: 50px;
     font-size: 1.5em;
+    font-family: Poppins, sans-serif;
 }
 
 [type="button"] {
