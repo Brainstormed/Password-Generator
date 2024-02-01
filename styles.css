@@ -52,3 +52,21 @@ span {
     font-size: 1.2em;
     font-family: "JetBrains Mono", monospace;
 }
+
+#passwdStrength {
+    width: 10em;
+    margin: 1em auto;
+    border-radius: 5px;
+}
+
+@keyframes error {
+    25% {
+        transform: translateX(0.5em);
+    }
+    75% {
+        transform: translateX(-0.5em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
