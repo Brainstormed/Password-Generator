@@ -13,14 +13,14 @@ function errorAnimation() {
   });
 }
 
+function random() {
+  return Math.floor(Math.random() * 89);
+}
+
 function generate() {
   let passStr = "";
   let mapIn = [];
   let passOut = [];
-
-  function random() {
-    return Math.floor(Math.random() * 89);
-  }
 
   let length = document.getElementById("length").value;
 
