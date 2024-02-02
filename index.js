@@ -1,26 +1,28 @@
+let output = document.getElementById("output");
+let body = document.querySelector("body");
+let passwdStrength = document.getElementById("passwdStrength");
+let mapRef =
+  "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()`~[]/<>,.:;\"'{}\\?";
+
+function errorAnimation() {
+  output.style.animation = "none";
+  body.style.overflowX = "auto";
+  setTimeout(function () {
+    body.style.overflowX = "none";
+    output.style.animation = "error 0.3s forwards ease-in-out";
+  });
+}
+
 function generate() {
+  let passStr = "";
+  let mapIn = [];
+  let passOut = [];
+
   function random() {
     return Math.floor(Math.random() * 89);
   }
 
   let length = document.getElementById("length").value;
-  let output = document.getElementById("output");
-  let body = document.querySelector("body");
-  let passwdStrength = document.getElementById("passwdStrength");
-  let mapRef =
-    "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()`~[]/<>,.:;\"'{}\\?";
-  let mapIn = [];
-  let passOut = [];
-  let passStr = "";
-
-  function animation() {
-    output.style.animation = "none";
-    body.style.overflowX = "auto";
-    setTimeout(function () {
-      body.style.overflowX = "none";
-      output.style.animation = "error 0.3s forwards ease-in-out";
-    });
-  }
 
   if (length > 0) {
     for (let i = 0; i < length; i++) {
@@ -62,7 +64,7 @@ function generate() {
     }
   } else {
     output.textContent = "Please enter an proper number!";
-    animation();
+    errorAnimation();
     output.style.opacity = 0.6;
     output.style.userSelect = "none";
     passwdStrength.textContent = "";

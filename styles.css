@@ -18,13 +18,12 @@ hr {
   max-width: 95%;
 }
 
-[type="text"] {
+[type="number"] {
   height: 50px;
   font-size: 1.5em;
   font-family: Poppins, sans-serif;
   max-width: 90%;
   padding-left: 0.3em;
-  padding-right: 0.3em;
 }
 
 [type="button"] {
